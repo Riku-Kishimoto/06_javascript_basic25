@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>カウントアップ装置</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -17,22 +18,44 @@
         console.log(count);// コンソールにcountを表示
 
         // 変数<p>に要素を代入
-        let counter = document.querySelector('#counter');
+        let counter = document.querySelector('p#counter');
         //documentはHTMLのこと
         //CSSセレクターはcssで使うセレクターのこと
         console.log(counter); //pが入っている
         //p要素のテキストをcount(0)にする。
+        //プロバティ
+
         counter.textContent = count;
 
         //素材はすべて取り込む
         const plusBtn = document.querySelector('#plus');
         console.log(plusBtn);
 
+        //クリックイベントを登録
+        plusBtn.addEventListener('click', function () {
+            console.log('クリックしたよ')
+            //countに＋１をする
+            //count = count + 1;
+            //インクリメント
+            count++;
+            console.log(count);
+            counter.textContent = count;
+        });
+
+
+
+
+
+
+
+
+
+
 
 
 
         let a; //変数の宣言
-        console.log(a); //undefind値が無い
+        console.log(a); //undefind=値が無い
         a = 10; //変数aに値(10)を代入
         console.log(a); //10
 
@@ -41,7 +64,9 @@
         console.log(b); //20
         b = 30;
         console.log(b); //30
+        //間違えやすいところでクォテーションをいれない
         console.log('b'); //クォテーションは文字列
+        //再宣言　no
         //let b =30; 同じ変数名では宣言ができない
     </script>
 </body>
