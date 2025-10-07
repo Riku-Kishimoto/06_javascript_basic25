@@ -29,10 +29,3 @@ Btn.addEventListner('click',function(){
     //クリックした後の処理
 });
 ```
-=======
--変数のキーワード(let,console)
-
-##要素の取得
-
-
->>>>>>> 048ed43b9fac28896754bbe722f9dd414326f8d6
