@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>配列・条件分岐（if文）の振り返り</title>
+</head>
+
+<body>
+    <button id="btn">クリック</button>
+    <script>
+        const hobbies = ['映画鑑賞', '読書', '旅行'];
+    </script>
+</body>
+
+</html>
+
+<script>
+
+    //再代入が予想される場合はletを使う
+    let count = 0;
+
+    //使われる場合はconst(定数)
+    const colors = [];
+
+    colors[0] = '赤';
+    colors[1] = '青';
+    colors[2] = '黄';
+
+    colors[1] = '黄';
+
+    // hobbies[3] = 'jjj';
+
+
+    console.log(colors);
+    console.log(colors[1]);
+
+    //インデックスが012なので　１
+    const blue = colors[1];
+
+    if (blue === '青') {
+        console.log('正解です');
+    }
+
+    else {
+        console.log('不正解です');
+    }
+
+
+
+
+
+    //まずJavaScriptに読み込む、変数にいれる
+    const btn = document.querySelector('#btn');
+    console.log(btn);
+
+    btn.addEventListener('click', function () {
+        alert('押されました');
+    })
+
+
+
+
+    //正解　lengthは配列の要素数
+    const num = hobbies.length
+    if (3 === num) {
+        console.log('趣味が3つあります');
+    }
+
+    else {
+        console.log('趣味が3つではありません')
+    }
+
+
+    //自分の答え
+    if (3 === hobbies.length) {
+        console.log('趣味が3つあります');
+    }
+
+    else {
+        console.log('趣味が3つではありません')
+    }
+
+
+
+</script>
