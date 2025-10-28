@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1021 ---------------------------------------------------------------------------------------------------------------------->
+
+    <div>
+        <p class='question1'>問題欄1</p>
+        <input type="text" class="response1">
+        <button id="btn1">回答する</button>
+    </div>
+    <div>
+        <p class='question2'>問題欄2</p>
+        <input type="text" class="response2">
+        <button id="btn2">回答する</button>
+    </div>
+    <div>
+        <p class='question3'>問題欄3</p>
+        <input type="text" class="response3">
+        <button id="btn3">回答する</button>
+    </div>
+    <div>
+        <p class='question4'>問題欄4</p>
+        <input type="text" class="response4">
+        <button id="btn4">回答する</button>
+    </div>
+    <script>
+        // 【演習2】各ひらがなボタンをクリックしたら（addEventListener）、対象のフルーツもしくは野菜をtextContentで、ひらがなに置きかえてください。
+        const appleBtn = document.querySelector('#appleBtn');
+        appleBtn.addEventListener('click', function () {
+            apple.textContent = 'りんご';
+        })
+
+        const grape = document.querySelector('.grape');
+        console.log(grape);
+
+        const grapeBtn = document.querySelector('#grapeBtn');
+        grapeBtn.addEventListener('click', function () {
+            grape.textContent = 'ぐれーぷ';
+        })
+
+        const strawberryBtn = document.querySelector('.strawberryBtn');
+        strawberryBtn.addEventListener('click', function () {
+            strawberry.textContent = 'いちご';
+        })
+
+        const cabbageBtn = document.querySelector('#cabbageBtn');
+        cabbageBtn.addEventListener('click', function () {
+            cabbage.textContent = 'きゃべつ';
+        })
+    </script>
+</body>
+
+</html>
