@@ -84,10 +84,10 @@ attackButton.addEventListener('click', function () {
 
 attackButton2.addEventListener('click', function () {
   const damege = Math.floor(Math.random() * (DAMAGE_MAX - DAMAGE_MIN + 1)) + DAMAGE_MIN;
-  hp = hp - damege;
-  hpText2.textContent = hp;
+  hp2 = hp2 - damege;
+  hpText2.textContent = hp2;
 
-  if (hp <= 0) {
+  if (hp2 <= 0) {
     hpText2.textContent = 0;
     hpBar2.value = 0;
     enemysecond.classList.add('enemy--fly');
@@ -97,8 +97,8 @@ attackButton2.addEventListener('click', function () {
     seDefeat.currentTime = 0;
     seDefeat.play();
   } else {
-    hpText2.textContent = hp;
-    hpBar2.value = hp;
+    hpText2.textContent = hp2
+    hpBar2.value = hp2;
 
     shakeEnemy2();
 
