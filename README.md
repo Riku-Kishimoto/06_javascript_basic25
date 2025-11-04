@@ -38,3 +38,23 @@ Btn.addEventListner('click',function(){
         console.log(Math.ceil(10.3)); //切り上げ
 
 current = 現在
+
+##　関数の定義と実行　ワンセット
+        function makeOnigiri() {
+            console.log("おにぎりを握った！");
+        }
+
+        makeOnigiri();
+
+## クリックイベント
+
+const makeBtn = document.querySelector('#makeBtn');
+
+makeBtn.addEventListener('click', function () {
+
+    //処理
+    //ランダム　配列の要素の数を最大値に
+    const index = Math.floor(Math.random() * ingredients.length);
+    const result = ingredients[index];
+    console.log(result);
+})

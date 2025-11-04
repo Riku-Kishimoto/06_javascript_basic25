@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>復讐</title>
+    <style>
+        /* .doctitleっていうのがcssセレクター */
+        /* スペースの意味 子孫セレクタ*/
+        .doctitle span {
+            color: red;
+        }
+
+        li {
+            color: blue;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .orange {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="doctitle"><span>1</span>タイトル</h1>
+    <h2>サブタイトル</h2>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="orange">5</li>
+    </ul>
+
+    <button>色変えボタン</button>
+
+    <script>
+        //----------------要素の取得 document.querySelector('cssセレクター');
+        //クラスは. idは# [type]属性セレクタ
+        document.querySelector('.doctitle');
+
+        //----------------変数への代入　(const 変数名 = 代入するもの)
+        //なんでも最初は変数に入れる
+        const title = document.querySelector('.doctitle span');
+        const num = 0;
+        console.log(title);//<span>1</span>
+
+        //----------------変数constとletの使い分け
+        const text = 'コンスト';
+        // text = 'レット'; って入れられない　再宣言　再代入　×
+        let text2 = 'レット';
+        text2 = 'レット２'; //置き換えられる　再宣言×　再代入◯
+
+
+        //----------------クリックイベント（取得した要素.addEventListener('click',function(){処理})）
+
+        title.addEventListener('click', function () {
+            alert('スパン');
+        });
+
+        //h2を押したらアラート
+        //とりあえず変数に入れる
+        //jsの世界に入れる
+
+        const subT = document.querySelector('h2')
+        console.log(subT); //consoleに表示
+
+        subT.addEventListener('click', function () {
+            alert('サブタイトル');
+        });
+
+        //----------------複数要素の取得　（document.querySelectorAll(cssセレクター);）
+
+        const lists = document.querySelectorAll('li');
+        console.log(lists);
+        //Nodelist = 配列っぽいもの　= インデックス　添字(0から始める数値)
+
+        //----------------配列の添字　(インデックス)　添字の取得
+        //後ろに[]でインデックスで入れる
+        console.log(lists[2]); //3
+        console.log(lists[4]); //5
+
+
+        //----------------if文（条件分岐）の条件式の書き方
+        let number = 1;
+        if (number === 1) {
+            console.log('1です')
+        } else if (number === 2) {
+            console.log('2です')
+        } else {
+            console.log('それ以外です')
+        }
+
+        //----------------配列の要素数を使った　for文
+        const animals = ['いぬ', 'ねこ', 'リス', 'さめ'];
+        console.log(animals);
+
+        for (let i = 0; i < animals.length; i = i + 1) {
+            console.log(animals[i])
+        }
+
+        //listsをループさせる
+        for (let i = 0; i < lists.length; i++) {
+            console.log(lists[i])
+        }
+
+        //----------------クラス属性の追加　削除　(classList.add(クラス名)　classList.remove(クラス名))
+
+        // lists[1].classList.add('green');
+        // lists[4].classList.remove('orange');
+
+
+        //----------------関数の定義と呼び出し
+
+        function changeColor() {
+            lists[1].classList.add('green');
+            lists[4].classList.remove('orange');
+        }
+        //関数の実行
+
+        changeColor();
+
+        //    <button>色変えボタン</button>
+
+        const changeCBtn = document.querySelector('button');
+
+        changeCBtn.addEventListener('click', function () {
+            changeColor();
+        });
+    </script>
+</body>
+
+
+</html>
