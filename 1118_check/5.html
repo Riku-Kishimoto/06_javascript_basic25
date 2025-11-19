@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styleはheadの中に -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .globalmenu {
+            background-color: #000;
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            transition: transform 200ms ease-in-out;
+            transform: translateX(-90%);
+            /*↑上のコメントアウトを外す */
+        }
+
+        .open {
+            transform: translateX(0);
+        }
+
+        .menu {
+            margin: 0;
+            list-style-type: none;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- body中に -->
+    <nav class="globalmenu">
+        <ul class="menu">
+            <li>メニュー項目01</li>
+            <li>メニュー項目02</li>
+            <li>メニュー項目03</li>
+            <li>メニュー項目04</li>
+        </ul>
+        <button>OPEN</button>
+    </nav>
+
+    <script>
+        //下記HTMLをスライドで開くメニューにしてください。開いた状態からCSSのコメントアウトを解除して格納（閉じた）状態から始めてください。
+        //①変数btnを設定し、button要素を代入します。
+        //②変数btnにクリックイベントを設定します。
+        //③nav class="globalmenu"を変数gnavに代入します。
+        //④btnをクリックすると、classListでopenをトグルで設定してください。
+
+        const btn = document.querySelector('button');
+        const gnav = document.querySelector('.globalmenu');
+
+        btn.addEventListener('click', function () {
+            gnav.classList.add('open');
+        });
+    </script>
+</body>
+
+</html>

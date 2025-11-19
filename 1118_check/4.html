@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <span>トライデントコンピュータ専門学校</span>は愛知県名古屋市にあり、1984年に開校。IT技術者多数育成。現在、情報処理系3学科とCG／ゲーム開発／<span>Webデザイン</span>／CADなどの学科もあり、卒業生の<span>就職実績</span>も豊富です。
+    </p>
+    <script>
+        //4.
+        //下記HTMLのspan要素をクリックすると、①span要素内のテキストがconsoleに表示されるようにしてください。※要素.textContentで取得できます。
+        //②さらに、文字が赤く、太くなるようにJavaScriptのみで操作してください。
+        const span = document.querySelectorAll('p span');
+        const spanContent = span.textContent
+
+        for (let i = 0; i < span.length; i++) {
+
+            span[i].addEventListener('click', function () {
+                console.log(spanContent);
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>

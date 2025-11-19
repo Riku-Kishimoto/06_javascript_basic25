@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>数字<span></span></h1>
+    <a href="#" class="groupsite" target="_blank">Webサイト</a>
+    <button>レッツゴー</button>
+    <script>
+        //下記HTMLでは、「レッツゴー」ボタンをクリックすると、h1内spanに0〜3の数字でランダムに変更します。
+        //<a href="#" class="groupsite" target="_blank">Webサイト</a>が
+        //if...else文で、数字の表示が0のときFRUITS ZIPPERのサイトのリンクを反映し、数字が1のときCANDY TUNEのサイトへのリンクが反映され、数字が2のとき、SWEET STEADYのサイトへのリンク、数字が3のとき、CUTIE STREETのサイトへのリンクに切り替わる変わる仕組みを配列kawaiilabss（各グループのURL）活用してプログラミングをしてください。
+        //<a>要素.hrefでリンクは設定できます。
+
+        const kawaiilabss = [
+            'https://fruitszipper.asobisystem.com/',
+            'https://candytune.asobisystem.com/',
+            'https://sweetsteady.asobisystem.com/',
+            'https://cutiestreet.asobisystem.com/',
+        ];
+        document.querySelector('button').addEventListener('click', function () {
+            //0〜３の数値
+            const title = Math.floor(Math.random() * 4);
+            //必要な要素を取得
+            const h1inSpan = document.querySelector('h1 span');
+            h1inSpan.textContent = title;
+
+            //ここに記述します。
+
+            const groupsite = document.querySelector('.groupsite');
+            if (h1inSpan === 1) {
+                groupsite.a.href.textContent = kawaiilabss[0];
+            } else if (h1inSpan === 2) {
+                groupsite.textContent = kawaiilabss[1];
+            } else if (h1inSpan === 3) {
+                groupsite.textContent = kawaiilabss[2];
+            }
+            //ここまで
+        });
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

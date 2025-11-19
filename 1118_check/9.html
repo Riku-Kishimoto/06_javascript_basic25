@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 下記のJavaScriptを以下の要件に基づいて、プログラムを完成させてください。
+    ①変数 age が 18 歳未満の場合、"未成年" というメッセージを message 変数に代入してください。 ②変数 age が 18 歳以上かつ 65 歳未満の場合、"成人" というメッセージを message
+    変数に代入してください。 ③変数 age が 65 歳以上の場合、"シニア" というメッセージを message 変数に代入してください。
+    *
+    const age = Math.floor(Math.random() * 100);
+    let message;
+     -->
+
+    <script>
+        const age = Math.floor(Math.random() * 100);
+        let message;
+        // 条件分岐をここに記述
+        if (age <= 18) {
+            message = '未成年';
+        } else if (age >= 18, age < 65) {
+            message = '成人';
+        } else {
+            message = 'シニア';
+        }
+        // ここまで
+        console.log('年齢: ' + age + ' 歳, メッセージ: ' + message);
+    </script>
+</body>
+
+</html>

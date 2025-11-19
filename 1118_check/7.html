@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>カラーボタン</h1>
+    <div class="colorlist">
+        <button id="red">赤色</button>
+        <button id="blue">青色</button>
+        <button id="green">緑色</button>
+        <button id="yellow">黄色</button>
+        <button id="pink">桃色</button>
+        <button id="purple">紫色</button>
+    </div>
+    <script>
+        //    下記HTMLのbuttonをクリックすると、id属性から色名を取得し、bodyの背景（background-color）に設定するJavaScriptを記述してください。idの値は、要素.idで取得できます。
+        //ここに記述する
+
+        const buttns = document.querySelectorAll('button');
+        const colors = buttns.id
+        const body = document.querySelector('body');
+
+        for (let i = 0; i < buttns.length; i++) {
+            buttns[i].addEventListener('click', function () {
+                body.background = colors;
+            });
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

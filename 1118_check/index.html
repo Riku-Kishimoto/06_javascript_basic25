@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テスト</title>
+</head>
+
+<body>
+    <!-- 2番 -->
+    <div class="images">
+        <img src="path/cat.png" alt="猫の画像" class="img_cat">
+        <img src="path/dog.png" alt="犬の画像" class="img_dog">
+        <img src="path/panda.png" alt="パンダの画像" class="img_panda">
+    </div>
+
+
+    <!-- 4番 -->
+
+
+    <script>
+        //1.
+        //① 変数schoolを作成し、文字列型で「トライデントコンピュータ専門学校」と代入してください。
+        //② 変数courseを作成し、文字列型で「Webデザイン学科」と代入してください。
+        //③ console.logの引数内で、schoolとcourseを文字列連結して「トライデントコンピュータ専門学校Webデザイン学科」と表示させてください。
+        const school = 'トライデントコンピュータ専門学校';
+
+        const course = 'Webデザイン学科';
+
+        console.log(school + course);
+
+        //2.
+        //①下記HTMLより、猫の画像のimg要素のみを取得し、変数catImgに代入してください。
+        //②変数catImgからalt属性を取得し、console.logで「猫の画像」と表示してください。
+
+        const catImg = document.querySelector('.img_cat')
+        const catAlt = catImg.alt = "猫の画像";
+
+        console.log(catAlt);
+
+        //3.
+        //①ゴレンジャーのメンバー5名、アカレンジャー、アオレンジャー、ミドレンジャー、キレンジャー、モモレンジャーを要素とした配列gorangerを作ってください。
+        //②console.logに変数gorangerと添字を使ってモモレンジャーと表示されるようにしてください。
+        //③for文で、すべての要素をconsoleに表示されるようにしてください
+
+        const goranger = ['アカレンジャー', 'アオレンジャー', 'ミドレンジャー', 'キレンジャー', 'モモレンジャー'];
+
+        console.log(goranger[4]);
+
+        for (let i = 0; i < goranger.length; i++) {
+            console.log(goranger[i]);
+        }
+
+
+    </script>
+</body>
+
+</html>

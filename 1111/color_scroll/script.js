@@ -50,6 +50,20 @@ document.body.style.backgroundColor =
     settingColors[0].b +
     ')';
 
+//10 関数の定義
+
+function changeColor(num) {
+    //関数の処理を書く
+    document.body.style.backgroundColor =
+        'rgb(' +
+        settingColors[num].r +
+        ',' +
+        settingColors[num].g +
+        ',' +
+        settingColors[num].b +
+        ')';
+}
+
 //4 スクロールするたびにイベント
 window.addEventListener('scroll', function () {
     console.log('スクローーーーる');
@@ -59,6 +73,7 @@ window.addEventListener('scroll', function () {
     console.log(scrollY);
     //6 1 / 4進んだら色が変わるようにする
     //7 スクロールを4分割
+    //9 変数scrollableを4分割
     if (scrollY < (scrollable * 1) / 4) {
         document.body.style.backgroundColor =
             'rgb(' +
@@ -87,13 +102,32 @@ window.addEventListener('scroll', function () {
             settingColors[2].b +
             ')';
     } else {
-        document.body.style.backgroundColor =
-            'rgb(' +
-            settingColors[3].r +
-            ',' +
-            settingColors[3].g +
-            ',' +
-            settingColors[3].b +
-            ')';
+        //11 関数の呼び出し（実行）の実引数z
+        //関数名() = 関数の呼び出し
+        changeColor(3);
     }
 })
+
+
+
+
+
+
+//上に戻るボタン
+window.addEventListener('scroll', function () {
+    const button = document.querySelector('.moveToTop');
+    if (this.window.scrollY >= 200) {
+        button.style.display = 'block';
+    } else {
+        button.style.display = 'none';
+
+    }
+});
+
+const button = document.querySelector('.moveToTop');
+button.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

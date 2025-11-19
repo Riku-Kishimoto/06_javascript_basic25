@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        .unit {
+            font-size: 1.5em;
+        }
+
+        .price {
+            p {
+                display: inline-block;
+            }
+
+            button {
+                display: inline-block;
+                margin: 0 5px;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <section>
+            <h1>醤油らーめん</h1>
+            <div class="ramenArea">
+                <img src="https://4.bp.blogspot.com/-SmXTKx3nBcA/UrlnHYwXxoI/AAAAAAAAcOA/erB3n3GC80E/s800/ramen_syouyu.png"
+                    alt="醤油ラーメン" />
+                <p class="unit"><span>550</span>円</p>
+            </div>
+            <div class="price">
+                <button class="minus">-</button>
+                <p class="num">0</p>
+                <button class="plus">+</button>
+            </div>
+            <p>合計：<span class="result"></span></p>
+        </section>
+        <script>
+
+            //下記の HTML は、ラーメン（1杯 550 円）の注文数を「＋」「−」ボタンで変更し、注文数に応じて合計金額を表示する仕組みです。JavaScript を記述して、次の仕様を満たしてください。
+            // 【仕様】
+            // ・ラーメン1杯 550円 とする
+            // ・.plus ボタンをクリックすると注文数（.num）を 1 増やし、合計金額（.result）を更新する
+            // ・.minus ボタンをクリックすると注文数（.num）を 1 減らし、注文数が 0未満にならないようにして、合計金額（.result）を更新する
+            // ・それぞれ querySelector を用いて要素を取得し、addEventListener('click', …) で処理を書くこと
+
+            let price = 550;
+            let num = 0;
+            //ここから記述してください。
+
+            const minus = document.querySelector('.minus');
+            const plus = document.querySelector('.plus');
+            const result = document.querySelector('.result');
+
+            plus.addEventListener('click', function () {
+                result = result + 1;
+                result.textContent = result
+            });
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>
