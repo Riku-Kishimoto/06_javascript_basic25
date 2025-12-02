@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  color: #fff;
+  background-color: black;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+}
+
+.header {
+  margin-top: 3.125rem;
+}
+.header__inner {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__title {
+  color: #fff;
+  font-size: 1.875rem;
+}
+
+.footer {
+  margin-bottom: 1.25rem;
+}
+.footer__inner {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__copy {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.constellation {
+  margin-top: 3.125rem;
+  margin-bottom: 6.25rem;
+}
+.constellation__inner {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.constellation__list {
+  border-radius: 2.5rem;
+  padding: 0.9375rem;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0.9375rem;
+}
+.constellation__item {
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.constellation__item:hover {
+  color: white;
+}
+
+.fortune-box {
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  align-items: center;
+}
+
+#sky {
+  position: fixed;
+  inset: 0;
+  transform-origin: center;
+  z-index: -1;
+  -webkit-animation: rotateSky 300s linear infinite;
+          animation: rotateSky 300s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes rotateSky {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateSky {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

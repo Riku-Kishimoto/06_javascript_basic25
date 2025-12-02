@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">Horoscope</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="constellation">
+            <div class="constellation__inner">
+                <div class="constellation__list">
+                    <button class="constellation__item" data-name="Aries">Aries</button>
+                    <button class="constellation__item" data-name="Taurus">Taurus</button>
+                    <button class="constellation__item" data-name="Gemini">Gemini</button>
+                    <button class="constellation__item" data-name="Cancer">Cancer</button>
+                    <button class="constellation__item" data-name="Leo">Leo</button>
+                    <button class="constellation__item" data-name="Virgo">Virgo</button>
+                    <button class="constellation__item" data-name="Libra">Libra</button>
+                    <button class="constellation__item" data-name="Scorpio">Scorpio</button>
+                    <button class="constellation__item" data-name="Sagittarius">Sagittarius</button>
+                    <button class="constellation__item" data-name="Capricorn">Capricorn</button>
+                    <button class="constellation__item" data-name="Aquarius">Aquarius</button>
+                    <button class="constellation__item" data-name="Pisces">Pisces</button>
+                </div>
+                <div id="fortuneBox" class="fortune-box"></div>
+            </div>
+        </section>
+
+
+        <div id="sky"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <small class="footer__copy">&copy;2025 Horoscope</small>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
