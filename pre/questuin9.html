@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1．Webサイトの設定情報があります。オブジェクトリテラルで変数siteに格納しなさい。
+
+        // title: 'Portfolio'
+
+        // author: 'Yamada'
+
+        // themeColor: '#ff9900'
+
+        const site = {
+            title: 'Portfolio',
+            author: 'Yamada',
+            themeColor: '#ff9900'
+        };
+
+        console.log(site);
+
+
+        //Q2．商品価格 priceを受け取り、消費税率 taxが10%として、税込価格を戻り値で返す関数式 getTotalPrice を書きなさい。
+        //    1000円の商品を購入した時の税込み価格をconsoleに表示してください
+
+        function getTotalPrice(price) {
+            const tax = 0.1;
+            const total = price + (price * tax);
+            return total;
+        };
+
+        console.log(getTotalPrice(1000));
+
+        getTotalPrice(1000);
+
+
+        //Q3．商品の在庫数 stock を受け取り、在庫が 1 以上なら true、0 なら false を戻り値で返す関数isInStockがある。アロー関数の関数式 isInStock に書き直してください。
+
+
+        // function isInStock(stock) {
+        //     if (stock > 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+
+        const isInStock = (stock) => stock > 0;
+
+
+        console.log(isInStock(0));
+        console.log(isInStock(0));
+
+        //Q4．配列 items = ['財布', '鍵', 'スマホ'] を受け取り、配列の要素数（= length）を取得し、テンプレートリテラルで「持ち物は○個です」と戻り値として返す関数式 getCount を作りなさい。
+
+        items = ['財布', '鍵', 'スマホ']
+
+        function getCount(items) {
+            const length = items.length;
+            return `持ち物は ${length} 個です`;
+        };
+
+        console.log(getCount(items));
+
+        //Q5．次のオブジェクトproductを引数で取得し、この price を 20 % OFF（小数は切り捨て）にして戻り値で返す関数式 getSalePrice を作りなさい。
+
+
+        const product = { name: 'ノート', price: 3129400 };
+
+        function getSalePrice(product) {
+            const price = product.price;
+            const salePrice = Math.floor(price * 0.8);
+            return salePrice;
+        };
+
+
+        console.log(getSalePrice(product));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

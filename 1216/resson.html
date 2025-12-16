@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch・非同期・JSON</title>
+</head>
+
+<body>
+    <script>
+        const syncAlert = function () {
+            alert('アラートを表示');
+            console.log('ログを出力');
+        };
+
+        //関数の実行
+        //syncAlert();
+
+
+        //非同期
+        //関数の定義
+        const asyncAlert = function () {
+            setTimeout(function () {
+                alert('アラートを表示');
+            }, 0);
+            console.log('ログを出力');
+        };
+        //関数の実行
+        asyncAlert();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 806.06 807.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <circle class="cls-2" cx="405.86" cy="754.29" r="3.54"/>
+    <circle class="cls-2" cx="289.74" cy="665.65" r="2.83"/>
+    <circle class="cls-2" cx="243.41" cy="623.98" r="2.83"/>
+    <circle class="cls-2" cx="2.83" cy="599.29" r="2.83"/>
+    <circle class="cls-2" cx="30.37" cy="342.4" r="2.83"/>
+    <circle class="cls-2" cx="155.45" cy="306.91" r="2.83"/>
+    <circle class="cls-2" cx="183.87" cy="87.72" r="2.83"/>
+    <circle class="cls-2" cx="152.62" cy="108.69" r="2.83"/>
+    <circle class="cls-2" cx="234.96" cy="93.39" r="2.83"/>
+    <circle class="cls-2" cx="332.56" cy="208.24" r="2.83"/>
+    <circle class="cls-2" cx="451.64" cy="299.38" r="2.83"/>
+    <circle class="cls-2" cx="446.81" cy="656.77" r="2.83"/>
+    <circle class="cls-2" cx="573.72" cy="600.83" r="2.83"/>
+    <circle class="cls-2" cx="764.29" cy="639.69" r="2.83"/>
+    <circle class="cls-2" cx="659.44" cy="694.6" r="2.83"/>
+    <circle class="cls-2" cx="551.67" cy="738.25" r="2.83"/>
+    <circle class="cls-2" cx="469.18" cy="805.01" r="2.83"/>
+    <circle class="cls-2" cx="185.2" cy="50.36" r="2.83"/>
+    <circle class="cls-2" cx="244.44" cy="474.3" r="3.54"/>
+    <circle class="cls-2" cx="302.07" cy="26.82" r="3.54"/>
+    <circle class="cls-2" cx="533.99" cy="36.6" r="3.54"/>
+    <polyline class="cls-1" points="2.83 599.29 30.37 342.4 183.87 87.72 152.62 108.69"/>
+    <polyline class="cls-1" points="185.2 50.36 183.87 87.72 234.96 93.39 302.07 26.82 332.56 208.24 451.64 299.38"/>
+    <circle class="cls-2" cx="803.22" cy="2.83" r="2.83"/>
+    <polyline class="cls-1" points="803.22 2.83 533.99 36.6 302.07 26.82"/>
+    <polyline class="cls-1" points="183.87 87.72 155.45 306.91 244.44 474.3 243.41 623.98 289.74 665.65 405.86 754.29 446.81 656.77 573.72 600.83 764.29 639.69 659.44 694.6 551.67 738.25 469.18 805.01 406.88 755.37"/>
+    <line class="cls-1" x1="403.34" y1="754.29" x2="4.3" y2="600.07"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323.85 216.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <circle class="cls-2" cx="2.83" cy="62.46" r="2.83"/>
+    <circle class="cls-2" cx="28.12" cy="68.13" r="2.83"/>
+    <circle class="cls-2" cx="42.2" cy="109.85" r="2.83"/>
+    <circle class="cls-2" cx="80.37" cy="150.06" r="2.83"/>
+    <circle class="cls-2" cx="147.51" cy="185.04" r="2.83"/>
+    <circle class="cls-2" cx="198.16" cy="213.26" r="2.83"/>
+    <circle class="cls-2" cx="216.78" cy="187.88" r="2.83"/>
+    <circle class="cls-2" cx="308.26" cy="35.85" r="2.83"/>
+    <circle class="cls-2" cx="321.02" cy="2.83" r="2.83"/>
+    <circle class="cls-2" cx="148.76" cy="70.97" r="2.83"/>
+    <circle class="cls-2" cx="91.48" cy="67.09" r="2.83"/>
+    <line class="cls-1" x1="2.83" y1="62.46" x2="28.12" y2="68.13"/>
+    <line class="cls-1" x1="42.2" y1="109.85" x2="28.12" y2="68.13"/>
+    <line class="cls-1" x1="91.48" y1="67.09" x2="28.12" y2="68.13"/>
+    <line class="cls-1" x1="148.76" y1="70.97" x2="91.48" y2="67.09"/>
+    <line class="cls-1" x1="80.37" y1="150.06" x2="42.2" y2="109.85"/>
+    <line class="cls-1" x1="147.51" y1="185.04" x2="80.37" y2="150.06"/>
+    <line class="cls-1" x1="198.16" y1="213.26" x2="147.51" y2="185.04"/>
+    <line class="cls-1" x1="216.78" y1="187.88" x2="198.16" y2="213.26"/>
+    <line class="cls-1" x1="308.26" y1="35.85" x2="216.78" y2="187.88"/>
+    <line class="cls-1" x1="308.26" y1="35.85" x2="148.76" y2="70.97"/>
+    <line class="cls-1" x1="321.02" y1="2.83" x2="308.26" y2="35.85"/>
+  </g>
+</svg>

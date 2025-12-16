@@ -18,28 +18,26 @@
     </header>
 
     <main class="main">
-        <section class="constellation">
-            <div class="constellation__inner">
-                <div class="constellation__list">
-                    <button class="constellation__item" data-name="Aries">Aries</button>
-                    <button class="constellation__item" data-name="Taurus">Taurus</button>
-                    <button class="constellation__item" data-name="Gemini">Gemini</button>
-                    <button class="constellation__item" data-name="Cancer">Cancer</button>
-                    <button class="constellation__item" data-name="Leo">Leo</button>
-                    <button class="constellation__item" data-name="Virgo">Virgo</button>
-                    <button class="constellation__item" data-name="Libra">Libra</button>
-                    <button class="constellation__item" data-name="Scorpio">Scorpio</button>
-                    <button class="constellation__item" data-name="Sagittarius">Sagittarius</button>
-                    <button class="constellation__item" data-name="Capricorn">Capricorn</button>
-                    <button class="constellation__item" data-name="Aquarius">Aquarius</button>
-                    <button class="constellation__item" data-name="Pisces">Pisces</button>
+
+        <section class="horoscope-wheel">
+
+            <div class="wheel-wrapper">
+
+                <svg id="constellationWheelSVG" width="600" height="600"></svg>
+
+                <div id="fortuneBox" class="center-display">
+                    <p class="initial-message">
+                        あなたの星座を選んで<br>12月の運勢をチェック！
+                    </p>
                 </div>
-                <div id="fortuneBox" class="fortune-box"></div>
+
             </div>
+
         </section>
 
-
         <div id="sky"></div>
+        <div class="shooting-stars"></div>
+
     </main>
 
     <footer class="footer">

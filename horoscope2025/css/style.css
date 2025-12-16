@@ -1,81 +1,40 @@
 body {
   margin: 0;
   color: #fff;
-  background-color: black;
-  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+  background-color: #080a1c;
+  font-family: "Rajdhani", "IBM Plex Mono", monospace;
+  overflow-x: hidden;
 }
 
 .header {
-  margin-top: 3.125rem;
+  margin-top: 50px;
 }
 .header__inner {
-  max-width: 1000px;
+  max-width: 1024px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 .header__title {
   color: #fff;
-  font-size: 1.875rem;
+  font-size: 40px;
+  letter-spacing: 0.005em;
+  text-align: left;
 }
 
 .footer {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 .footer__inner {
-  max-width: 1000px;
+  max-width: 1024px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 .footer__copy {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  font-size: 0.75rem;
+  font-size: 12px;
   text-align: center;
-}
-
-.constellation {
-  margin-top: 3.125rem;
-  margin-bottom: 6.25rem;
-}
-.constellation__inner {
-  max-width: 1000px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-.constellation__list {
-  border-radius: 2.5rem;
-  padding: 0.9375rem;
-  display: grid;
-  grid-auto-flow: row;
-  row-gap: 0.9375rem;
-}
-.constellation__item {
-  color: #fff;
-  opacity: 1;
-  text-align: center;
-  cursor: pointer;
-  padding: 10px 0;
-  margin: 5px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-.constellation__item:hover {
-  color: white;
-}
-
-.fortune-box {
-  color: #fff;
-  margin-top: 20px;
-  padding: 20px;
-  font-size: 1.2em;
-  text-align: center;
-  align-items: center;
 }
 
 #sky {
@@ -83,8 +42,8 @@ body {
   inset: 0;
   transform-origin: center;
   z-index: -1;
-  -webkit-animation: rotateSky 300s linear infinite;
-          animation: rotateSky 300s linear infinite;
+  -webkit-animation: rotateSky 160s linear infinite;
+          animation: rotateSky 160s linear infinite;
   transform-style: preserve-3d;
 }
 
@@ -95,23 +54,154 @@ body {
   background: white;
   border-radius: 50%;
   opacity: 0.7;
+  -webkit-animation: twinkle 3s infinite ease-in-out alternate;
+          animation: twinkle 3s infinite ease-in-out alternate;
 }
 
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  opacity: 0.8;
+  transform: rotate(135deg);
+  -webkit-animation: dropStar 1.2s ease-out forwards;
+          animation: dropStar 1.2s ease-out forwards;
+}
+
+@-webkit-keyframes dropStar {
+  0% {
+    transform: translate(0, 0) rotate(135deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(400px, 400px) rotate(135deg);
+    opacity: 0;
+  }
+}
+
+@keyframes dropStar {
+  0% {
+    transform: translate(0, 0) rotate(135deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(400px, 400px) rotate(135deg);
+    opacity: 0;
+  }
+}
 @-webkit-keyframes rotateSky {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @keyframes rotateSky {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotate(360deg);
   }
+}
+.horoscope-wheel {
+  margin-bottom: 200px;
+}
+
+.wheel-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 50%;
+}
+
+.center-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  padding: 18px;
+  background: rgba(10, 20, 50, 0.88);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.center-display::-webkit-scrollbar {
+  display: none;
+}
+
+.center-display h3 {
+  font-size: 1.4em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.center-display h4 {
+  font-size: 0.95em;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.center-display p {
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.center-display strong {
+  color: #fff;
+  font-weight: bold;
+}
+
+.center-display hr {
+  width: 70%;
+  height: 1px;
+  border: none;
+  margin: 6px 0;
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.initial-message {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.constellation-icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.constellation-icon.is-active {
+  filter: drop-shadow(0 0 20px #00ffff);
+}
+
+.wheel-wrapper {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#constellationWheelSVG {
+  position: absolute;
+  inset: 0;
+  width: 600px;
+  height: 600px;
+  z-index: 1;
+  overflow: visible;
 }
 /*# sourceMappingURL=style.css.map */
